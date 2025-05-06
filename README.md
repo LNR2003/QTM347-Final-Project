@@ -112,7 +112,7 @@ The result of Random Forest is out of expectation. It resulted high accuracy and
   - Confusion Matrix:
 
     <img src="images/rf2_cm.png" alt="Diagram" width="400">
-  - Top 20 Important Features:
+  - Top 5 Important Features:
 
     <img src="images/rf2_if.png" alt="Diagram" width="400">
    
