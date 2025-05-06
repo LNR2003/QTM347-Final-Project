@@ -71,6 +71,24 @@ type
 ## Results
 ### Independent Results
 #### Random Forest
+The result of Random Forest is out of expectation. It resulted high accuracy and f1 score in both attempts.
+- First attmpt:
+  - Classification report:
+ 
+    | Label        | Precision | Recall | F1-score | Support |
+    |--------------|-----------|--------|----------|---------|
+    | 1            | 0.95      | 0.92   | 0.94     | 42557   |
+    | 2            | 0.94      | 0.95   | 0.94     | 56500   |
+    | 3            | 0.93      | 0.96   | 0.94     | 7121    |
+    | 4            | 0.87      | 0.88   | 0.88     | 526     |
+    | 5            | 0.73      | 0.90   | 0.80     | 1995    |
+    | 6            | 0.87      | 0.92   | 0.89     | 3489    |
+    | 7            | 0.95      | 0.97   | 0.96     | 4015    |
+    | **Accuracy** |           |        | 0.94     | 116203  |
+    | Macro avg    | 0.89      | 0.93   | 0.91     | 116203  |
+    | Weighted avg | 0.94      | 0.94   | 0.94     | 116203  |
+  - Confusion Matrix:
+    ![Diagram](images/rf1_cm.png)
 
 #### XGBoost
 
