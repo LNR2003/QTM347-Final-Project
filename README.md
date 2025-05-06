@@ -125,9 +125,18 @@ The result of Random Forest is out of expectation. It resulted high accuracy and
 
 - Second Attempt:
   - **Test Accuracy: 0.8213**
-
+ 
 ## Discussion
-type
+Among all the models we tested, Random Forest performed the best in terms of model accuracy. At the early stage of the project, we expected Neural Network to have the highest accuracy, but we are surprised by the result that Neural Network performed similarly to XGBoost, while underperformed compared to Random Forest.
+
+The attempt of LDA/QDA was not successful, since the classification problem this time violates the normality assumption. Random Forest was successful likely because it is a flexible, non-parametric model that makes no assumptions about the data distribution, allowing it to handle complex, non-linear relationships and interactions between features. In contrast, LDA and QDA assume normally distributed features, which can lead to poor performance if those assumptions are violated. Additionally, Random Forest is more robust to irrelevant or highly correlated features and reduces overfitting through averaging across many decision trees, whereas QDA in particular can overfit when the number of predictors is high. 
+
+### Future Direction
+Although the modelling with Neural Network did not perform well compareed to Random Forest, it is possibly due to lack of fine-tuning of hyperparameters. In our project, the hyperparameter tuning is not performed, it might be a future direction for researches to test with more combinations of hyperprameters to check if the accuracy could be improved. Otherwise, the model could also be improved by manually combining relevant features like similar soil types, since there are 40 soil types currently, the dimentional reduction might improve the robustness of model by reducing overfitting of irrelevant features. Other methods like PCA or feature selections along woth data standardization and normalization might help as well. 
+
+### Practical Usage
+The Random Forest model that we trained with best parameters could be adjusted in future for application in other forests. The model could be a measure to understand species diversity and richness in specific forest ecosystems and model impacts of environmental change. Furthermore, environmental concerns like wildfire risks could be assessed based on forest cover types and terrain conditions.
+
 ## Conclusion
 type
 ## References
