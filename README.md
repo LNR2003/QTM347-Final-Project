@@ -73,7 +73,7 @@ type
 #### Random Forest
 The result of Random Forest is out of expectation. It resulted high accuracy and f1 score in both attempts.
 - First attmpt:
-  - Classification report:
+  - Classification Report:
  
     | Label        | Precision | Recall | F1-score | Support |
     |--------------|-----------|--------|----------|---------|
@@ -88,7 +88,34 @@ The result of Random Forest is out of expectation. It resulted high accuracy and
     | Macro avg    | 0.89      | 0.93   | 0.91     | 116203  |
     | Weighted avg | 0.94      | 0.94   | 0.94     | 116203  |
   - Confusion Matrix:
-    ![Diagram](images/rf1_cm.png)
+
+    <img src="images/rf1_cm.png" alt="Diagram" width="400">
+  - Top 20 Important Features:
+
+    <img src="images/rf1_if.png" alt="Diagram" width="400">
+
+- Second Attempt (Best Parameters):
+  - Classification Report:
+
+    | Label        | Precision | Recall | F1-score | Support |
+    |--------------|-----------|--------|----------|---------|
+    | 1            | 0.97      | 0.96   | 0.97     | 42557   |
+    | 2            | 0.97      | 0.97   | 0.97     | 56500   |
+    | 3            | 0.96      | 0.97   | 0.96     | 7121    |
+    | 4            | 0.90      | 0.89   | 0.89     | 526     |
+    | 5            | 0.89      | 0.89   | 0.89     | 1995    |
+    | 6            | 0.93      | 0.94   | 0.94     | 3489    |
+    | 7            | 0.96      | 0.97   | 0.97     | 4015    |
+    | **Accuracy** |           |        | 0.97     | 116203  |
+    | Macro avg    | 0.94      | 0.94   | 0.94     | 116203  |
+    | Weighted avg | 0.94      | 0.97   | 0.97     | 116203  |
+  - Confusion Matrix:
+
+    <img src="images/rf2_cm.png" alt="Diagram" width="400">
+  - Top 20 Important Features:
+
+    <img src="images/rf2_if.png" alt="Diagram" width="400">
+   
 
 #### XGBoost
 
