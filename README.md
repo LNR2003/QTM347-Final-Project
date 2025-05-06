@@ -33,6 +33,16 @@ The dataset is retrieved from UC Irvine Machine Learning Repository (UCIMLR) htt
  
 ### Model Used
 In this project, Logistic Regression, LDA/QDA, Random Forest, XGBoost, and Neural Network are utilized for construction of prediction model.
+#### Logistic Regresion 
+type
+#### LDA/QDA
+type
+#### Random Forest 
+In first attempt, parameters used were:
+
+#### XGBoost
+#### Neural Network
+type
 
 
 ## Results
