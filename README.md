@@ -55,7 +55,7 @@ Best parameters are:
 
 #### XGBoost
 This model is executed on Macbook Pro: Apple M3 Pro with 18GB RAM.  
-After attepmts with Random Forest, we wondered how would XGBoost perform in prediction.
+After attepmts with Random Forest, we wondered how would XGBoost perform in prediction, so we performed a simple modelling inXGBoost .
 In the first attempt, parameters used were:
 - (n_estimators=500, learning_rate=0.01, max_depth=3, random_state=0). The test accuracy under this set of parameters was **0.7547**.
 
@@ -116,8 +116,15 @@ The result of Random Forest is out of expectation. It resulted high accuracy and
 
     <img src="images/rf2_if.png" alt="Diagram" width="400">
    
-
 #### XGBoost
+- First Attmpt:
+  - **Test Accuracy: 0.7547**
+  - Visualized Learning Curve:
+
+    <img src="images/XGB_Lc.png" alt="Diagram" width="400">
+
+- Second Attempt:
+  - **Test Accuracy: 0.8213**
 
 ## Discussion
 type
