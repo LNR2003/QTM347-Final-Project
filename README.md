@@ -3,7 +3,10 @@ Emory University QTM347 Final Project Repository
 ## Abstract
 type
 ## Introdution
-type
+The Roosevelt National Forest located in northern Colorado has abundant natural resources and historical importance. Once severely over-timbered in the late 19th and early 20th centuries, the forest underwent large-scale reforestation during the Great Depression through the initiatives of the Civilian Conservation Corps (CCC). Throughout recorded history, it has also gone through many forest fires. Even in the most recent decades, there have been two substantial wildfire occurrences, including the High Park Fire in 2012 and the Cameron Peak Fire in 2020, with the latter being the largest wildfire ever recorded in Colorado. Ecologically, this landscape is also home to many wildlife, including black bears, elk, moose, mountain lions, bighorn sheep, and various endangered bird species.
+
+Understanding forest cover types in this area is essential for conservation planning, habitat protection, and sustainable resource management. Accurate cover type prediction enables more targeted recovery and protection strategies, while also informing responsible timber practices and identifying areas more prone to wildfires. In this project, we apply multiple machine learning models, including Logistic Regression, Linear and Quadratic Discriminant Analysis (LDA/QDA), Random Forest, and a Neural Network, to classify forest cover types based on environmental and topographic features. Our goal is not only to identify the most effective model for the Roosevelt National Forest but also to develop a predictive framework that could be adapted for use in other forest systems with similar conservation and resource challenges.
+
 ## Setup 
 ### Dataset Description
 The dataset is retrieved from UC Irvine Machine Learning Repository (UCIMLR) https://doi.org/10.24432/C50K5N. The data set classifies pixel into 7 forest cover types based on 54 features(numerical & categorical), these are: 
