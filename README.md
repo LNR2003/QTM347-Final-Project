@@ -38,7 +38,8 @@ There is a high concentration of data entries on Cover types "2" and "1".
 ### Model Used
 In this project, Logistic Regression, LDA/QDA, Random Forest, XGBoost, and Neural Network are utilized for construction of prediction model.
 #### Logistic Regresion 
-type
+The parameters used were:
+(multi_class='multinomial', solver='lbfgs', max_iter=1000, random_state=42)
 #### LDA/QDA
 type
 #### Random Forest 
@@ -66,7 +67,8 @@ Best parameters are:
 - (n_estimators: 400, max_depth: 5, min_samples_split: 8). The test accuracy under this set of parameters was **0.8213**.
 
 #### Neural Network
-type
+The parameter used were:
+(Dense(64, activation='relu', input_shape=(X_train.shape[1],)), Dropout(0.3), Dense(32, activation='relu'), Dense(7, activation='softmax'))
 
 ## Results
 ### Independent Results
