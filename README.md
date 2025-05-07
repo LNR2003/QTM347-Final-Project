@@ -171,7 +171,16 @@ The result of Random Forest is out of expectation. It resulted high accuracy and
 
 - Second Attempt:
   - **Test Accuracy: 0.8213**
- 
+
+#### Neural Network
+<img src="images/NN_metrics.png" alt="Diagram" width="400">
+
+<img src="images/NN_confusion_matrix.png" alt="Diagram" width="400">
+
+
+
+
+
 ## Discussion
 Among all the models we tested, Random Forest performed the best in terms of model accuracy. At the early stage of the project, we expected Neural Network to have the highest accuracy, but we are surprised by the result that Neural Network performed similarly to XGBoost, while underperformed compared to Random Forest.
 
