@@ -74,7 +74,12 @@ The parameter used were:
 ## Results
 ### Independent Results
 #### Logistic Regression
+This baseline model showed promising results. We achieved an overall 0.725 accuracy score, which showed that the model is relatively reliable. However, we also observe that the model is less reliable when predicting certain classes. For example, the accuracy for class 5 is significantly lower than the other classes.
+
 <img src="images/LR_metrics.png" alt="Diagram" width="400">
+
+The model gave us an overview of what features are the most important. We see that Elevation ranked the highest with a highest coefficient.
+
 <img src="images/Top5_features.png" alt="Diagram" width="400">
 
 #### Random Forest
