@@ -86,6 +86,7 @@ The model gave us an overview of what features are the most important. We see th
 #### LDA/QDA
 The results for LDA and QDA are expected. 
 QDA performed really badly, as the binary soil_type variables that could not be normally distributed really influenced the results. An accuracy score of 0.0853 makes the model's performance worse than guessing, suggesting that QDA is not suitable for this dataset without dimensionality reduction or regularization.
+Top 5 Features:
 <img src="images/qdatop5.png" alt="Diagram" width="400">
 
 - Classification Report (QDA):
@@ -104,6 +105,7 @@ QDA performed really badly, as the binary soil_type variables that could not be 
 
 In comparison, LDA performs better than QDA, achieving an accuracy score of 0.6798. As LDA pools covariance estimates across all classes, it is proven to be more robust than QDA for our high-dimensional, uneven-in-class dataset. While the accuracy score could certainly be improved, it still shows better fit than QDA.
 
+Top 5 Features: 
 <img src="images/ldatop5.png" alt="Diagram" width="400">
 
 - Classification Report (LDA):
