@@ -83,7 +83,7 @@ The model gave us an overview of what features are the most important. We see th
 
 <img src="images/Top5_features.png" alt="Diagram" width="400">
 
-####LDA/QDA
+#### LDA/QDA
 The results for LDA and QDA are expected. 
 QDA performed really badly, as the binary soil_type variables that could not be normally distributed really influenced the results. An accuracy score of 0.0853 makes the model's performance worse than guessing, suggesting that QDA is not suitable for this dataset without dimensionality reduction or regularization.
 - Classification Report (QDA):
@@ -118,7 +118,7 @@ In comparison, LDA performs better than QDA, achieving an accuracy score of 0.67
 
 #### Random Forest
 The result of Random Forest is out of expectation. It resulted high accuracy and f1 score in both attempts.
-- First attmpt:
+- First attempt:
   - Classification Report:
  
     | Label        | Precision | Recall | F1-score | Support |
