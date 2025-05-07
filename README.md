@@ -74,7 +74,9 @@ The parameter used were:
 ## Results
 ### Independent Results
 #### Logistic Regression
-<img src="images/LR_metrics.heic" alt="Diagram" width="400">
+<img src="images/LR_metrics.png" alt="Diagram" width="400">
+<img src="images/Top5_features.png" alt="Diagram" width="400">
+
 #### Random Forest
 The result of Random Forest is out of expectation. It resulted high accuracy and f1 score in both attempts.
 - First attmpt:
