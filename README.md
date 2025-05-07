@@ -83,6 +83,39 @@ The model gave us an overview of what features are the most important. We see th
 
 <img src="images/Top5_features.png" alt="Diagram" width="400">
 
+####LDA/QDA
+The results for LDA and QDA are expected. 
+QDA performed really badly, as the binary soil_type variables that could not be normally distributed really influenced the results. An accuracy score of 0.0853 makes the model's performance worse than guessing, suggesting that QDA is not suitable for this dataset without dimensionality reduction or regularization.
+- Classification Report (QDA):
+    | Label        | Precision | Recall | F1-score | Support |
+    |--------------|-----------|--------|----------|---------|
+    | 1            | 0.14      | 0.02   | 0.04     | 63552   |
+    | 2            | 0.78      | 0.01   | 0.01     | 84991   |
+    | 3            | 0.29      | 0.40   | 0.34     | 10726    |
+    | 4            | 0.07      | 1.00   | 0.14     | 824     |
+    | 5            | 0.02      | 0.71   | 0.04     | 2848    |
+    | 6            | 0.04      | 0.09   | 0.05     | 5210    |
+    | 7            | 0.18      | 0.89   | 0.30     | 6153    |
+    | **Accuracy** |           |        | 0.09     | 174304  |
+    | Macro avg    | 0.22      | 0.44   | 0.13     | 174304  |
+    | Weighted avg | 0.46      | 0.09   | 0.05     | 174304  |
+
+In comparison, LDA performs better than QDA, achieving an accuracy score of 0.6798. As LDA pools covariance estimates across all classes, it is proven to be more robust than QDA for our high-dimensional, uneven-in-class dataset. While the accuracy score could certainly be improved, it still shows better fit than QDA.
+
+- Classification Report (LDA):
+    | Label        | Precision | Recall | F1-score | Support |
+    |--------------|-----------|--------|----------|---------|
+    | 1            | 0.7       | 0.62   | 0.66     | 63552   |
+    | 2            | 0.76      | 0.76   | 0.76     | 84991   |
+    | 3            | 0.62      | 0.53   | 0.57     | 10726    |
+    | 4            | 0.26      | 0.57   | 0.35     | 824     |
+    | 5            | 0.29      | 0.21   | 0.24     | 2848    |
+    | 6            | 0.34      | 0.51   | 0.41     | 5210    |
+    | 7            | 0.41      | 0.81   | 0.55     | 6153    |
+    | **Accuracy** |           |        | 0.68     | 174304  |
+    | Macro avg    | 0.48      | 0.57   | 0.51     | 174304  |
+    | Weighted avg | 0.69      | 0.68   | 0.68     | 174304  |
+
 #### Random Forest
 The result of Random Forest is out of expectation. It resulted high accuracy and f1 score in both attempts.
 - First attmpt:
