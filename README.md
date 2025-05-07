@@ -178,11 +178,17 @@ The result of Random Forest is out of expectation. It resulted high accuracy and
   - **Test Accuracy: 0.8213**
 
 #### Neural Network
+The neural network model achieved an 0.84 accuracy. We see an increase in accuracy for all the classes prediction. The neural network model is particularly good at predicting instances from class 7. The model didn't perform much worse on a particular class. However, the accuracy for class 5 and 6 still have room for improvement.
+
 <img src="images/NN_metrics.png" alt="Diagram" width="400">
+
+From the confusion matrix, we see that the number on the diagonal is significantly higher than the rest, showing that the model has a high accuracy. An interesting fact that we observed is that instances belong to class 0 misclassified as class 1 and class 1 misclassified as class 0 are higher than the others. It may reflect that class 0 and 1 are similar to each other.
 
 <img src="images/NN_confusion_matrix.png" alt="Diagram" width="400">
 
+Both training and validation accuracy improve steadily during the early epochs. Validation accuracy increasing more rapidly compared to training accuracy. Around epoch 30, both curves begin to stablize, indicating the model is converging.
 
+<img src="images/NN_accuracy_curve.png" alt="Diagram" width="400">
 
 
 
