@@ -40,6 +40,7 @@ In this project, Logistic Regression, LDA/QDA, Random Forest, XGBoost, and Neura
 #### Logistic Regresion 
 The parameters used were:
 (multi_class='multinomial', solver='lbfgs', max_iter=1000, random_state=42)
+Since we have 7 distinct classes, we use a multinomial classifier to run the logistic regression model. the 'lbfgs' solver is ideal for out dataset size, and the maximimum iteration ensures convergence. Using these parameters, we achieved a model accuracy of 0.725. 
 #### LDA/QDA
 type
 #### Random Forest 
