@@ -42,7 +42,8 @@ The parameters used were:
 (multi_class='multinomial', solver='lbfgs', max_iter=1000, random_state=42)
 Since we have 7 distinct classes, we use a multinomial classifier to run the logistic regression model. the 'lbfgs' solver is ideal for out dataset size, and the maximimum iteration ensures convergence. Using these parameters, we achieved a model accuracy of 0.725. 
 #### LDA/QDA
-type
+For LDA and QDA, both models were trained and evaluated using a stratified 70/30 train-test split. 
+Model performance was assessed using metrics such as accuracy, macro-averaged recall, and macro F1 score. QDA had poor outcomes, generating an accuracy of 0.0853, a macro recall of 0.4446, and a F1 score of 0.1305. In comparison, LDA performed relatively well, with an accuracy of 0.6799, a macro recall of 0.5726, and a F1 score of 0.5064. 
 #### Random Forest 
 This model is executed on Macbook Pro: Apple M3 Pro with 18GB RAM.  
 In the first attempt, parameters used were:  
