@@ -1,7 +1,7 @@
 # QTM347-Final-Project: Know Your Fortest
 Emory University QTM347 Final Project Repository
 ## Abstract
-type
+The Roosevelt National Forest in Colorado, impacted by historical logging and recent wildfires like the 2020 Cameron Peak Fire, requires accurate forest cover classification for conservation and fire management. We compare machine learning models including Logistic Regression, LDA/QDA, Random Forest, and Neural Networks to predict cover types from topographic and environmental data. Our goal is to identify the best-performing model and to support sustainable forest management.
 ## Introdution
 The Roosevelt National Forest located in northern Colorado has abundant natural resources and historical importance. Once severely over-timbered in the late 19th and early 20th centuries, the forest underwent large-scale reforestation during the Great Depression through the initiatives of the Civilian Conservation Corps (CCC). Throughout recorded history, it has also gone through many forest fires. Even in the most recent decades, there have been two substantial wildfire occurrences, including the High Park Fire in 2012 and the Cameron Peak Fire in 2020, with the latter being the largest wildfire ever recorded in Colorado. Ecologically, this landscape is also home to many wildlife, including black bears, elk, moose, mountain lions, bighorn sheep, and various endangered bird species.
 
@@ -207,6 +207,7 @@ Although the modelling with Neural Network did not perform well compareed to Ran
 The Random Forest model that we trained with best parameters could be adjusted in future for application in other forests. The model could be a measure to understand species diversity and richness in specific forest ecosystems and model impacts of environmental change. Furthermore, environmental concerns like wildfire risks could be assessed based on forest cover types and terrain conditions.
 
 ## Conclusion
-type
+Random Forest performed as the top-performing model for forest cover classification, outperforming Neural Networks and discriminant analysis methods (LDA/QDA) due to its flexibility in handling non-linear relationships and robustness to feature assumptions. While Neural Networks showed potential, further hyperparameter tuning and feature engineering could enhance their performance.
+
 ## References
 Blackard, J. (1998). Covertype [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C50K5N.
